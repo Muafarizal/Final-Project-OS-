@@ -35,5 +35,5 @@ Langkah 4: Buka browser dan akses
 ```
 https://server-ip-address
 ```
-![Hasil](hasil apache.png)
+![Hasil](fp/hasilapache.png)
 ## 2. PHP
