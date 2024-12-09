@@ -33,7 +33,6 @@ Langkah 4: Buka browser dan akses
 ```
 https://ip-address
 ```
-![Hasil](.png)
 ## 2. MySQL (Database Server)
 Langkah 1: Install MySQL
 ```
@@ -63,6 +62,7 @@ GRANT ALL PRIVILEGES ON jualan_bekas.* TO 'user_jualan'@'localhost';
 FLUSH PRIVILEGES;
 EXIT;
 ```
+![Hasil](database.png)
 ## 3. PHP (Backend Server)
 Langkah 1 : Install PHP dan ekstensi pendukung
 ```
@@ -94,6 +94,7 @@ server {
     }
 }
 ```
+![Hasil](defaultserver.png)
 - Simpan dan keluar (Ctrl + O, Enter, Ctrl + X).
 Langkah 3 : Restart Nginx
 ```
@@ -114,6 +115,7 @@ Langkah 3 : Tes Redis
 redis-cli ping
 ```
 - Jika redis aktif, akan muncul output PONG.
+![Hasil](pong.png)
 ## 5. OpenSSH (Remote Access Server)
 Langkah 1 : Install Openssh
 ```
@@ -171,6 +173,7 @@ Langkah 3 : Keitkkan kode index.php
 </body>
 </html>
 ```
+![Hasil](kodeindex.png)
 Langkah 4 : Ketikkan kode mobil.php
 ```
 <?php
@@ -189,6 +192,7 @@ while ($row = $result->fetch_assoc()) {
 }
 ?>
 ```
+![Hasil](kodemobil.png)
 ## Test
 Akses Website
 ```
