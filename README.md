@@ -1,4 +1,4 @@
-# FINAL PROJECT OS SERVER - 23.83.0962
+# FINAL PROJECT OS SERVER - 23.83.0960
 
 Membuat Layanan Web Server di **Ubuntu Desktop 22.04.3** dengan spesifikasi berikut:
 - **RAM**: 4 GB  
@@ -6,34 +6,34 @@ Membuat Layanan Web Server di **Ubuntu Desktop 22.04.3** dengan spesifikasi beri
 - **Disk**: 32 GB
 
 ## Daftar Isi
-1. [1. Web Server (Apache)](#1-web-server-apache)
-2. [2. PHP](#2-php)
-3. [3. Samba](#3-samba)
-4. [4. SSH Server](#4-ssh-server)
-5. [5. FTP Server (vsftpd)](#5-ftp-server-vsftpd)
-6. [6. Proxy Server (Squid)](#6-proxy-server-squid)
+1. [1. Web Server (Nginx)](#1-web-server-nginx)
+2. [2. MySQL](#2-mysql-dabase-server)
+3. [3. PHP](#3-php)
+4. [4. Redis (Cache Server)](#4-redis-server)
+5. [5. OpenSSH](#5-openssh)
+6. [6. Let's Encrypt (SSL/TLS)](#6-lets-encrypt)
 
 ---
 
-## 1. Web Server (Apache)
+## 1. Web Server (Nginx)
 Penjelasan tentang instalasi dan konfigurasi Web Server (Apache).
-### 1.1 Install Apache
-Langkah 1: Install Apache
+### 1.1 Install Nginx
+Langkah 1: Install Nginx
 ```
-sudo apt install apache2 -y
+sudo apt install nginx -y
 ```
-### 1.2 Konfigurasi Apache
-Langkah 2: Periksa status Apache
+### 1.2 Jalankan dan aktifkan Nginx
+Langkah 2: jalankan Nginx
 ```
-sudo service apache2 status
+sudo systemctl start nginx
 ```
-Langkah 3: Izinkan port 80 
+Langkah 3: aktifkan nginx 
 ```
-sudo ufw allow 80/tcp
+sudo systemctl enable nginx
 ```
 Langkah 4: Buka browser dan akses 
 ```
-https://server-ip-address
+https://ip-address
 ```
-![Hasil](fp/hasilapache.png)
-## 2. PHP
+![Hasil](.png)
+## 2. MySQL (Database Server)
