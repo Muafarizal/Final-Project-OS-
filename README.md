@@ -6,17 +6,17 @@ Membuat Layanan Web Server di **Ubuntu Desktop 22.04.3** dengan spesifikasi beri
 - **Disk**: 32 GB
 
 ## Daftar Isi
-1. [1. Web Server (Nginx)](#1-web-server-nginx)
-2. [2. MySQL](#2-mysql-dabase-server)
-3. [3. PHP](#3-php)
-4. [4. Redis (Cache Server)](#4-redis-server)
-5. [5. OpenSSH](#5-openssh)
+1. [1. Nginx (Web Server)](#1-nginx-web-server)
+2. [2. MySQL (Database Server)](#2-mysql-dabase-server)
+3. [3. PHP (Backend Server)](#3-php-backend-server)
+4. [4. Redis (Cache Server)](#4-redis-cache-server)
+5. [5. OpenSSH (Remote Access Server)](#5-openssh-remote-access-server)
 6. [6. Let's Encrypt (SSL/TLS)](#6-lets-encrypt)
 
 ---
 
-## 1. Web Server (Nginx)
-Penjelasan tentang instalasi dan konfigurasi Web Server (Apache).
+## 1. Nginx (Web Server)
+Penjelasan tentang instalasi dan konfigurasi Nginx (Web Server).
 Langkah 1: Install Nginx
 ```
 sudo apt install nginx -y
