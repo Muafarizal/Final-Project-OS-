@@ -16,6 +16,7 @@ Membuat Layanan Web Server di **Ubuntu Desktop 22.04.3** dengan spesifikasi beri
 ---
 
 ## 1. Nginx (Web Server)
+Nginx sebagai gerbang utama yang menerima permintaan dari pengguna.
 Penjelasan tentang instalasi dan konfigurasi Nginx (Web Server).
 Langkah 1: Install Nginx
 ```
@@ -34,6 +35,7 @@ Langkah 4: Buka browser dan akses
 https://ip-address
 ```
 ## 2. MySQL (Database Server)
+MySQL digunakan untuk menyimpan database server.
 Langkah 1: Install MySQL
 ```
 sudo apt install mysql-server -y
@@ -64,6 +66,7 @@ EXIT;
 ```
 ![Hasil](database.png)
 ## 3. PHP (Backend Server)
+PHP sebagai perantara untuk memproses permintaan yang mengambil data dari MySQL.
 Langkah 1 : Install PHP dan ekstensi pendukung
 ```
 sudo apt install php-fpm php-mysql -y
@@ -101,6 +104,7 @@ Langkah 3 : Restart Nginx
 sudo systemctl restart nginx
 ```
 ## 4. Redis (Cache Server)
+Redis digunakan sebagai caching data supaya mempercepat akses untuk permintaan yang sering dilakukan.
 Langkah 1 : Install Redis
 ```
 sudo apt install redis -y
@@ -117,6 +121,7 @@ redis-cli ping
 - Jika redis aktif, akan muncul output PONG.
 ![Hasil](pong.png)
 ## 5. OpenSSH (Remote Access Server)
+OpenSSH memungkinkan untuk mengelola dan memonitoring layanan-layanan server yang berjalan.
 Langkah 1 : Install Openssh
 ```
 sudo apt install openssh-server -y
@@ -133,6 +138,7 @@ ssh username@IP-ADDRESS
 ```
 - Ganti username dengan nama pengguna ubuntu desktop.
 ## 6. Let's Encrypt
+Let's Encrypt memastikan komunikasi antara server dan pengguna aman melalui HTTPS.
 Langkah 1 : Install Certbot
 ```
 sudo apt install certbot python3-certbot-nginx -y
@@ -147,7 +153,7 @@ Langkah 3 : Verifikasi
 ```
 https://domain atau ip
 ```
-## 7. Struktur Website
+## Struktur Website
 Langkah 1 : Buat struktur folder
 ```
 cd /var/www/html
